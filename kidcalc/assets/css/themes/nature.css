@@ -1,0 +1,14 @@
+body {
+    background-image: url("../../images/nature_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.op {
+    background-color: limegreen;
+}
+
+.op:hover {
+    background-color: rgb(38, 180, 38);
+}

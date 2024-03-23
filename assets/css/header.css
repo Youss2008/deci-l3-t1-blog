@@ -1,0 +1,53 @@
+header {
+    padding: 24px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    border-radius: 8px;
+    padding: 16px;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+
+nav a:active {
+    background-color: rgb(175, 175, 175);
+}
+
+@media all and (max-width: 693px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 421px) {
+    #login-button {
+        display: none;
+    }
+}
+
+@media all and (max-width: 317px) {
+    header h2 {
+        font-size: large;
+    }
+}

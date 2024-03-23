@@ -1,0 +1,12 @@
+header {
+    padding: 24px;
+    width: 100vw;
+    z-index: 1000;
+}
+
+#information-bar {
+    margin-top: 8px;
+    color: white;
+    display: none;
+    gap: 24px;
+}

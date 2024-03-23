@@ -1,0 +1,14 @@
+body {
+    background-image: url("../../images/math_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.op {
+    background-color: orange;
+}
+
+.op:hover {
+    background-color: rgb(226, 147, 0);
+}

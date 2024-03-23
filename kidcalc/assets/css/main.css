@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import "header.css";
+@import "login.css";
+@import "kidcalc.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: limegreen;
+}
+
+.spacer {
+    height: 16px;
+}
+
+.mini-spacer {
+    height: 4px;
+}
+
+.large-spacer {
+    height: 24px;
+}

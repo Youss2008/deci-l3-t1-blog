@@ -1,0 +1,107 @@
+main {
+    gap: 24px;
+    padding: 24px;
+}
+
+#kidcalc, #answer-box, #result-box {
+    padding: 24px;
+    max-width: 432px;
+    border-radius: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#calc-interface {
+    color: white;
+    min-height: 50px;
+    max-width: 100%;
+}
+
+#calc-numbers {
+    word-break: break-all;
+}
+
+#answer-box, #result-box {
+    color: white;
+    height: fit-content;
+    width: 300px;
+}
+
+#answer {
+    color: white;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: large;
+}
+
+#calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 64px);
+    grid-template-rows: repeat(4, 64px);
+    gap: 16px;
+}
+
+.calc-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.calc-button:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.large-button {
+    grid-column: span 2;
+    color: white;
+}
+
+#clear {
+    background-color: red;
+}
+
+#clear:hover {
+    background-color: rgb(205, 0, 0);
+}
+
+#submit {
+    width: 144px;
+    height: 64px;
+    background-color: limegreen;
+}
+
+#submit:hover {
+    background-color: rgb(38, 180, 38);
+}
+
+@media all and (max-width: 951px) {
+    main {
+        flex-direction: column;
+    }
+
+    #kidcalc, #answer-box, #result-box {
+        width: 432px;
+    }
+}
+
+@media all and (max-width: 479px) {
+    #calc-buttons {
+        grid-template-columns: repeat(4, 64px);
+        grid-template-rows: repeat(5, 64px);
+    }
+    #kidcalc, #answer-box, #result-box {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 399px) {
+    #calc-buttons {
+        grid-template-columns: repeat(3, 64px);
+        grid-template-rows: repeat(6, 64px);
+    }
+}

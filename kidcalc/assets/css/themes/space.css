@@ -1,0 +1,14 @@
+body {
+    background-image: url("../../images/space_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.op {
+    background-color: rgb(76, 34, 241);
+}
+
+.op:hover {
+    background-color: rgb(65, 28, 213);
+}

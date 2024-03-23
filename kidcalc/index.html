@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kidCalc math game, DECI L3 web dev project.">
+    <title>kidCalc</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><span class="red">kid</span><span class="green">Calc</span></h1>
+            <div id="information-bar">
+                <h3 id="greeting">Hello!</h3>
+                <h3>Score: <span id="score">0</span></h3>
+            </div>
+        </header>
+        <div id="login">
+            <h1>Sign In</h1>
+            <div class="spacer"></div>
+            <form id="login-form">
+                <div class="input-field">
+                    <label for="name">Enter your name:</label>
+                    <div class="mini-spacer"></div>
+                    <input type="text" name="name" id="name" required maxlength="30">
+                </div>
+                <div class="spacer"></div>
+                <div class="input-field">
+                    <label for="age">Enter your age:</label>
+                    <div class="mini-spacer"></div>
+                    <input type="number" name="age" id="age" required min="1" max="150">
+                </div>
+                <div class="spacer"></div>
+                <div class="input-field">
+                    <label for="theme">Choose a theme:</label>
+                    <div class="mini-spacer"></div>
+                    <select name="theme" id="theme">
+                        <option value="math">Math</option>
+                        <option value="space">Space</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                </div>
+                <div class="large-spacer"></div>
+                <input type="submit" value="Submit" id="submit-button">
+            </form>
+        </div>
+        <main id="main-section">
+            <div id="kidcalc">
+                <div id="calc-interface">
+                    <h2>Enter Mathematical Expression:</h2>
+                    <br>
+                    <h2 id="calc-numbers"></h2>
+                </div>
+                <br>
+                <div id="calc-buttons">
+                    <button class="calc-button" id="b1">1</button>
+                    <button class="calc-button" id="b2">2</button>
+                    <button class="calc-button" id="b3">3</button>
+                    <button class="calc-button" id="b4">4</button>
+                    <button class="calc-button" id="b5">5</button>
+                    <button class="calc-button" id="b6">6</button>
+                    <button class="calc-button" id="b7">7</button>
+                    <button class="calc-button" id="b8">8</button>
+                    <button class="calc-button" id="b9">9</button>
+                    <button class="calc-button" id="b0">0</button>
+                    <button class="calc-button op" id="plus">+</button>
+                    <button class="calc-button op" id="minus">-</button>
+                    <button class="calc-button op" id="greater">&gt;</button>
+                    <button class="calc-button op" id="less">&lt;</button>
+                    <button class="calc-button op" id="equal">=</button>
+                    <button class="calc-button large-button" id="clear">Clear</button>
+                </div>
+            </div>
+            <div id="answer-box">
+                <h2>Enter your answer (Leave empty if expression is a comparision):</h2>
+                <br>
+                <input type="number" name="answer" id="answer"></input>
+                <br>
+                <br>
+                <button class="calc-button" id="submit">Submit</button>
+            </div>
+            <div id="result-box">
+                <h2>Result:</h2>
+                <br>
+                <h2 id="result"></h2>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/calc.js"></script>
+</body>
+</html>
